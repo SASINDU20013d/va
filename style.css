@@ -1,0 +1,80 @@
+/* Basic reset and typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Seat map styling */
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-gap: 8px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.seat.available {
+  background-color: #4CAF50;
+}
+
+.seat.selected {
+  background-color: #FF9800;
+}
+
+.seat.booked {
+  background-color: #9E9E9E;
+  cursor: not-allowed;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.legend .seat {
+  margin-right: 5px;
+}
+
+#summary-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#paypal-button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
